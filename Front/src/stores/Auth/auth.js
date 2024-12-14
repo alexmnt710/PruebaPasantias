@@ -127,11 +127,13 @@ export const Auth = defineStore('AuthStore',{
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
+                        'Accept': 'application/json',
                     },
                     body: JSON.stringify(user),
                 });
                 const data = await response.json()
                 console.log(data)
+                return data
             } catch (error) {
                 console.error(error)
             }

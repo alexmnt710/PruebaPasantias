@@ -21,6 +21,7 @@ Route::middleware('guest.custom')->group(function () {
     Route :: get ( '/getProperties' , [PropertyController :: class , 'getProperties' ]);
 
     Route::get('/checkSession', [AuthController::class, 'checkSession']);
+    Route::post('/register', [AuthController::class, 'register']);
 });
 
 Route::middleware('auth:sanctum')->group(function () {
