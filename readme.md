@@ -6,8 +6,8 @@ Este documento describe los pasos necesarios para configurar y ejecutar tanto el
 
 ### **Requisitos previos**
 
-1. Tener una base de datos PostgreSQL configurada.
-2. Configurar las variables de entorno en un archivo `.env`. Asegúrate de incluir los datos de conexión a la base de datos PostgreSQL.
+1. Tener una base de datos postgres configurada.
+2. Configurar las variables de entorno en un archivo `.env`. Asegurarse de incluir los datos de conexión a la base de datos postgres.
 
 ### **Pasos para configurar el backend**
 
@@ -31,13 +31,13 @@ Este documento describe los pasos necesarios para configurar y ejecutar tanto el
    php artisan serve
 
 
-El backend estará disponible en la URL especificada por `php artisan serve` (por defecto, http://127.0.0.1:8000).
+El backend deberia disponible en la URL especificada por `php artisan serve` (por defecto, http://127.0.0.1:8000).
 
 ## **Frontend**
 
 ### **Requisitos previos**
 
-1. Verifica que el archivo `.env` del backend contenga la URL correcta del servidor backend. Este archivo no debe ser eliminado.
+1. Verificar que el archivo `.env` del backend contenga la URL correcta del servidor backend. Este archivo deberia de aparecer ya que es de la front.
 
 ### **Pasos para configurar el frontend**
 
@@ -67,6 +67,7 @@ El sistema cuenta con dos usuarios precargados para pruebas:
 
 ## **Notas adicionales**
 
-- Asegúrate de que el backend y el frontend estén sincronizados con la misma configuración del entorno.
+- Asegurese de que el backend y el frontend estén sincronizados con la misma configuración del entorno.
 - Si encuentras algún problema, verifica que las dependencias estén instaladas correctamente y que las configuraciones de entorno sean correctas.
+- Traten con cariño este programa 
 
